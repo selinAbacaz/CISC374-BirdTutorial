@@ -23,6 +23,7 @@ public class LogicScript : MonoBehaviour
         titleScreen.SetActive(true);
         Time.timeScale= 0;
         bestText.text= "Best: " + PlayerPrefs.GetInt(HighScoreKey, 0);
+        
 
         
     }
