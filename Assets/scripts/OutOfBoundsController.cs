@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class OutOfBoundsController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Stops player from going off screen, kills bird- rip bird
     public LogicScript logic;
     void Start()
     {

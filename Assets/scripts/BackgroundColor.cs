@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class BackgroundColor : MonoBehaviour
 {
+    //mostly followed an online tutorial on how to do this, can add more colors to the array in Unity inspector
     public Color[] colors= { new Color(0, 1, 0, 1), new Color(1, 0, 0, 1), new Color(0, 0, 1, 1) };
-    float colorChangeTime = 8.0f;     float currentTimer = 0f;
+    float colorChangeTime = 8.0f;     
+    float currentTimer = 0f;
     int currentColorIndex = 0;
     void Start()
     {

@@ -15,7 +15,6 @@ public class LogicScript : MonoBehaviour
 
     public GameObject gameOverScreen;
     public GameObject titleScreen;
-    public LogicScript logic;
 
 
     public void Start()
@@ -24,12 +23,9 @@ public class LogicScript : MonoBehaviour
         Time.timeScale= 0;
         bestText.text= "Best: " + PlayerPrefs.GetInt(HighScoreKey, 0);
         
-
-        
     }
 
     private const string HighScoreKey = "HighScore";
-
     public void SaveHighScore(int score)
     {
         int currentHighScore = PlayerPrefs.GetInt(HighScoreKey, 0);
@@ -49,6 +45,8 @@ public class LogicScript : MonoBehaviour
     {
         return PlayerPrefs.GetInt(HighScoreKey, 0); // Get stored high score or default to 0
     }
+
+
 
     public void addScore(int scoreToAdd){
         if(!gameIsOver){

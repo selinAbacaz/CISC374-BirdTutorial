@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CloudsController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // To make clouds move left
     public float moveSpeed= 5;
 
 

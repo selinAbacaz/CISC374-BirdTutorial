@@ -21,10 +21,13 @@ public class characterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // play background music while bird is still flapping its wings, stops music on game over screen
         if(!BirdIsAlive){
             backgroundSound.Play();
 
         }
+        // Checks to see if bird is alive, if not, then cant jump
         if(Input.GetKeyDown(KeyCode.Space) && BirdIsAlive){
 
             Jump();
