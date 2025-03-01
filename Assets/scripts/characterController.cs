@@ -4,20 +4,27 @@ public class characterController : MonoBehaviour
 {
     //public GameObject player;
     public AudioSource jumpSound;
+    public AudioSource backgroundSound;
     public Rigidbody2D myRigidBody;
     public float jumpForce = 10;
     public LogicScript logic;
     public bool BirdIsAlive= true;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         logic= GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(!BirdIsAlive){
+            backgroundSound.Play();
+
+        }
         if(Input.GetKeyDown(KeyCode.Space) && BirdIsAlive){
 
             Jump();

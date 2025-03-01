@@ -22,6 +22,7 @@ public class OutOfBoundsController : MonoBehaviour
            logic.gameOver();
         }
         
+        
 
     }
 }
